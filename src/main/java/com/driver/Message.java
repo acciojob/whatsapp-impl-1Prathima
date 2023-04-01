@@ -7,4 +7,21 @@ public class Message {
     private String content;
     private Date timestamp;
 
+    public int getId() {
+        return id;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public Date getTimestamp() {
+        return timestamp;
+    }
+
+    public Message(int id, String content, Date timestamp) {
+        this.id = id;
+        this.content = content;
+        timestamp =  new java.sql.Date(System.currentTimeMillis());
+    }
 }
