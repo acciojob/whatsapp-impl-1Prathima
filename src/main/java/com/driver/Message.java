@@ -22,6 +22,6 @@ public class Message {
     public Message(int id, String content, Date timestamp) {
         this.id = id;
         this.content = content;
-        timestamp =  new java.sql.Date(System.currentTimeMillis());
+        timestamp =  new Date();
     }
 }
